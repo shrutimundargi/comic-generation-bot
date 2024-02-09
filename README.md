@@ -13,3 +13,7 @@ This innovative narrative transformation is brought to life through an interacti
 To ensure seamless data management and security, the project relies on the robust infrastructure of the Google Cloud Platform, providing a stable and reliable foundation for storing and processing the extensive dataset.
 
 Ultimately, "Shakespearify" aims to reignite interest in Shakespeare's timeless stories by reimagining them in a digital context, fostering a deeper appreciation for his works among contemporary audiences while showcasing the transformative potential of AI in storytelling and artistic expression.
+
+### TECH STACK
+
+<img width="824" alt="Screenshot 2024-02-08 at 7 09 50 PM" src="https://github.com/shrutimundargi/comic-generation-bot/assets/48567754/6768fea8-a68c-481d-b477-5e4334f58fc6">
