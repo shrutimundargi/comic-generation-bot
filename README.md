@@ -17,3 +17,11 @@ Ultimately, "Shakespearify" aims to reignite interest in Shakespeare's timeless 
 ### TECH STACK
 
 <img width="824" alt="Screenshot 2024-02-08 at 7 09 50 PM" src="https://github.com/shrutimundargi/comic-generation-bot/assets/48567754/6768fea8-a68c-481d-b477-5e4334f58fc6">
+
+Our data was sourced from two distinct platforms:
+
+1. "Beautiful Stories from Shakespeare":
+Source: Project Gutenberg
+Nature of the Platform: Project Gutenberg serves as a digital library offering a diverse collection of free literary works, predominantly comprising older texts whose copyrights have lapsed. "Beautiful Stories from Shakespeare" is among the numerous titles available on this platform.
+2. User-Provided EPUB Files:
+Nature of the Source: EPUB (Electronic Publication) files are a prevalent format for digital books and publications. These files are designed to facilitate reflowable content, enabling text display optimization based on the reader's device. The data retrieved from user-provided EPUB files likely encompasses a range of literary works and genres.
