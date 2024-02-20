@@ -34,18 +34,19 @@ Furthermore, users have the option to effortlessly transform their beloved story
 
 <img width="715" alt="Screenshot 2024-02-20 at 1 02 48 PM" src="https://github.com/shrutimundargi/comic-generation-bot/assets/48567754/c385355f-214b-4221-bc5a-8af494613925">
 
-There are 5 parameters using which a animator (or a end user) can change to create different style to check if they meet their needs. The parameters are:
+Here are five customizable parameters available for the animator or end user to adjust and tailor their creative output:
 
-    Art-style: User can choose between multiple art styles native to the api like - Enhance, Anime, Photographic, Digital Art, Comic Book, Fantasy Art, Neon punk, Pixel art, Line art, Origami etc.
-    CFG Scale:"CFG Scale" refers to Classifier Free Guidance Scale. It's a parameter that influences how strictly the AI model adheres to the input prompt when generating images. v2-x models respond well to lower CFG (IE: 4-8), where as v1-x models respond well to a higher range (IE: 7-14) and SDXL models respond well to a wider range (IE: 4-12).
+Art Style: Users can select from a diverse range of art styles native to the API, including options like Enhance, Anime, Photographic, Digital Art, Comic Book, Fantasy Art, Neon punk, Pixel art, Line art, Origami, and more.
+
+CFG Scale: Short for Classifier Free Guidance Scale, this parameter influences how closely the AI model follows the input prompt when generating images. Different model versions respond optimally to varying CFG scales: v2-x models perform well with lower CFG values (e.g., 4-8), v1-x models excel with higher ranges (e.g., 7-14), and SDXL models demonstrate proficiency across a wider range (e.g., 4-12). Adjusting this scale allows users to fine-tune the level of guidance provided to the AI model, catering to their specific preferences and requirements.
 
 <img width="595" alt="Screenshot 2024-02-20 at 1 04 25 PM" src="https://github.com/shrutimundargi/comic-generation-bot/assets/48567754/c1f3c661-a3ca-4669-b1e2-bfbd4a92c535">
 
-    Seed: "Seed" refers to a value used to initialize the algorithm's random number generator.The seed value is a crucial parameter in AI image generation that controls the randomness of the output. Specifying a seed allows for reproducibility and consistency in results, while not specifying it (or setting it to 0) results in varied and unpredictable outputs.
+Seed: The "Seed" parameter denotes a value utilized to initialize the algorithm's random number generator. This value plays a pivotal role in AI image generation as it governs the randomness of the output. By specifying a seed, users ensure reproducibility and consistency in results. Conversely, not specifying a seed (or setting it to 0) yields varied and unpredictable outputs. Adjusting the seed allows for fine control over the generated images, enabling users to explore different variations while maintaining the ability to replicate desired results.
 
 <img width="627" alt="Screenshot 2024-02-20 at 1 06 34 PM" src="https://github.com/shrutimundargi/comic-generation-bot/assets/48567754/abb33a60-fb52-44ce-a292-516a7a561528">
 
-Steps: AI models like Stable Diffusion use a process called 'diffusion' to generate images. This process involves gradually transforming a pattern of random noise into a coherent image. The transformation occurs over a series of steps. In each step, the model slightly adjusts the image, making it progressively less random and more structured, based on the input prompt.
+Steps: AI models such as Stable Diffusion employ a technique known as 'diffusion' to generate images. This process entails the gradual transformation of a random noise pattern into a coherent image. The transformation unfolds over a sequence of steps, with each step involving slight adjustments to the image. These adjustments progressively reduce randomness and enhance structure, guided by the input prompt. Modifying the number of steps allows users to influence the pace and granularity of the image generation process, enabling them to achieve the desired level of detail and refinement in the final output.
 
 <img width="617" alt="Screenshot 2024-02-20 at 1 06 54 PM" src="https://github.com/shrutimundargi/comic-generation-bot/assets/48567754/fc4d36d3-1b27-43ed-8bae-a52a0d9fcb49">
 
