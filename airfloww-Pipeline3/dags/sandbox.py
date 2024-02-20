@@ -95,7 +95,7 @@ def prompt_engineering(**kwargs):
 
 def api_call(prompt, image_number):
 
-    url = "https://api.stability.ai/v1/generation/stable-diffusion-xl-1024-v1-0/text-to-image"
+    url = ""
 
     body = {
         "steps": 40,
