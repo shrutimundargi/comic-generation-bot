@@ -1,4 +1,4 @@
-# comic-generation-bot
+# Shakespearify - Comic generator
 
 
 <img width="923" alt="Screenshot 2024-02-08 at 7 00 15 PM" src="https://github.com/shrutimundargi/comic-generation-bot/assets/48567754/1d948bbb-bd30-4890-abc6-4d00b0a8ede7">
