@@ -4,6 +4,8 @@
 <img width="923" alt="Screenshot 2024-02-08 at 7 00 15 PM" src="https://github.com/shrutimundargi/comic-generation-bot/assets/48567754/1d948bbb-bd30-4890-abc6-4d00b0a8ede7">
 
 
+The demo video: https://drive.google.com/drive/folders/1iChOHqXDGNkagqMBW2yNeglPAgA79wfX?usp=share_link
+
 ### ABOUT
 
 The "Shakespearify" project is a pioneering endeavor that seamlessly blends AI-driven storytelling with captivating illustrations to contemporize the timeless works of Shakespeare for today's audience. Leveraging cutting-edge AI tools, the project dynamically segments and extracts Shakespearean texts, subsequently generating vibrant artistic prompts through OpenAI's API for visually engaging illustrations.
