@@ -33,19 +33,6 @@ app = FastAPI()
 
 chapters_content_global = {}
 
-"""SERVICE_ACCOUNT_FILE = '/Users/anamikabharali/Downloads/Final_Project/comic_fastapi/flowing-perigee-407723-d7fa72ef675f.json'
-
-cred = credentials.Certificate("/Users/anamikabharali/Downloads/Final_Project/comic_fastapi/flowing-perigee-407723-d7fa72ef675f.json")
-firebase_admin.initialize_app(cred)
-db = firestore.client()"""
-
-"""
-credentials = service_account.Credentials.from_service_account_file(SERVICE_ACCOUNT_FILE)
-db = firestore.Client(credentials=credentials, project=credentials.project_id)
-
-db = firestore.Client.from_service_account_json('/Users/anamikabharali/Downloads/Final_Project/comic_fastapi/flowing-perigee-407723-d7fa72ef675f.json')"""
-
-
 
 @app.post("/upload-epub/")
 async def upload_epub(file: UploadFile = File(...)):
@@ -127,9 +114,9 @@ def upload_to_firestore(segmented_data, collection_name):
         return False  # Indicates failure
 
 import certifi
-client = MongoClient('mongodb+srv://saniyakapur39:4t7Do4YRshsKRyfl@atlascluster1.gf69eem.mongodb.net/?retryWrites=true&w=majority', tlsCAFile=certifi.where())
+client = MongoClient('', tlsCAFile=certifi.where())
 # Set up MongoDB connection
-#client = MongoClient('mongodb+srv://saniyakapur39:4t7Do4YRshsKRyfl@atlascluster1.gf69eem.mongodb.net/?retryWrites=true&w=majority')    
+#client = MongoClient('')    
 db = client['images_and_prompts']
 collection = db['images_prompts']
 
@@ -175,13 +162,13 @@ async def get_story_alternating(story_name: str):
 
 
 # Set up OpenAI
-os.environ['OPENAI_API_KEY'] = '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'
+os.environ['OPENAI_API_KEY'] = ''
 openai.api_key = os.getenv('OPENAI_API_KEY')
  
 @app.get("/retrieve-data-from-firestore/")
 async def retrieve_from_firestore(play_name: str = Query(..., description="Name of the play")):
-    os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "/Users/anamikabharali/Downloads/Final_Project/comic_fastapi/flowing-perigee-407723-d7fa72ef675f.json"
-    cred = credentials.Certificate("/Users/anamikabharali/Downloads/Final_Project/comic_fastapi/flowing-perigee-407723-d7fa72ef675f.json")
+    os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = ""
+    cred = credentials.Certificate("")
     firebase_admin.initialize_app(cred)
     
     db = firestore.Client()
@@ -253,7 +240,7 @@ async def stable_diffusion_endpoint(request_data: List[str],story_name: str, ste
 
 def api_call(prompt, image_number, steps, art_style, cfg_scale, seed, story_name):
 
-    url = "https://api.stability.ai/v1/generation/stable-diffusion-xl-1024-v1-0/text-to-image"
+    url = ""
 
     body = {
         "steps": steps,
@@ -278,7 +265,7 @@ def api_call(prompt, image_number, steps, art_style, cfg_scale, seed, story_name
     headers = {
         "Accept": "application/json",
         "Content-Type": "application/json",
-        "Authorization": "Bearer sk-WQENOrNAra9W9P0YZUKOixOhyJxYpP8yAwyH4gEwrixzgmZT",
+        "Authorization": "Bearer ",
 }
 
     response = requests.post(
@@ -291,9 +278,9 @@ def api_call(prompt, image_number, steps, art_style, cfg_scale, seed, story_name
         raise Exception("Non-200 response: " + str(response.text))
 
     data = response.json() # Repl
-    os.environ['AWS_ACCESS_KEY_ID'] = 'AKIAVDTWAS7LAKLGAFPF'
-    os.environ['AWS_SECRET_ACCESS_KEY'] = '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'
-    os.environ['AWS_DEFAULT_REGION'] = 'us-east-2'
+    os.environ['AWS_ACCESS_KEY_ID'] = ''
+    os.environ['AWS_SECRET_ACCESS_KEY'] = ''
+    os.environ['AWS_DEFAULT_REGION'] = ''
     with tempfile.TemporaryDirectory() as temp_dir:
         image_paths = []
         for i, image in enumerate(data["artifacts"]):
@@ -308,7 +295,7 @@ def api_call(prompt, image_number, steps, art_style, cfg_scale, seed, story_name
 
 
 def prompt_engineering(**kwargs):
-    os.environ['OPENAI_API_KEY'] = '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'
+    os.environ['OPENAI_API_KEY'] = ''
     openai.api_key = os.getenv('OPENAI_API_KEY')
     parts = retrieve_from_firestore(**kwargs)
 
@@ -370,7 +357,7 @@ async def store_images_and_prompts_endpoint(request_data: StoreImagesAndPromptsR
         separated_prompts = prompt_engineering(story_name=story_name)  # You should provide the appropriate parameters here
 
         """ # Set up MongoDB connection
-        client = MongoClient('mongodb+srv://saniyakapur39:4t7Do4YRshsKRyfl@atlascluster1.gf69eem.mongodb.net/?retryWrites=true&w=majority')
+        client = MongoClient('')
         db = client['images_and_prompts']
         collection = db['images_prompts']"""
 
