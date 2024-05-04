@@ -23,7 +23,7 @@ image_bytes = base64.b64decode(encoded_image)
 image = Image.open(BytesIO(image_bytes))
  
 # MongoDB setup
-client = MongoClient('mongodb+srv://saniyakapur39:4t7Do4YRshsKRyfl@atlascluster1.gf69eem.mongodb.net/?retryWrites=true&w=majority')
+client = MongoClient('')
 db = client['images_and_prompts']
 collection = db['images_prompts']
  
