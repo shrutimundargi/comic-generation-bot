@@ -6,6 +6,8 @@
 
 The demo video: https://drive.google.com/drive/folders/1iChOHqXDGNkagqMBW2yNeglPAgA79wfX?usp=share_link
 
+Codelabs: https://codelabs-preview.appspot.com/?file_id=https://docs.google.com/document/d/11HC-1LpisJTqCnSOU2hKEpsWQpU3qmPzW1dlcs4RZ8o#0
+
 ### ABOUT
 
 The "Shakespearify" project is a pioneering endeavor that seamlessly blends AI-driven storytelling with captivating illustrations to contemporize the timeless works of Shakespeare for today's audience. Leveraging cutting-edge AI tools, the project dynamically segments and extracts Shakespearean texts, subsequently generating vibrant artistic prompts through OpenAI's API for visually engaging illustrations.
